@@ -43,7 +43,19 @@ const choices = ["R", "P", "S"];
       // update wins if win
       // update losses if loses
       // update ties if tie
+      if (gameOutcome === 'Win') {
+         score.wins +=1;
+      }
+
+      if (gameOutcome === 'Lost') {
+         score.losses -=1;
+
+      if (gameOutcome === 'Tie') {
+            score.ties +1;
    }
+}
+   }
+   
    
    // display the score of player 1 in the console logs
    const displayScore = function () {
